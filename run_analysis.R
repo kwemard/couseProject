@@ -62,8 +62,8 @@ data_mean_std=cbind(data_mean_std,y,subject)
 #-----------------------------------------------------------------
 
 # The activity in the data set is variable "y". 
-# We will  transformed this variable in factor and changed is factor levels according
-# to the informations in "activity_labels.txt" :
+# We transforme this variable in factor and change its factor levels according
+# to the informations in "activity_labels.txt" 
 # 1 WALKING
 # 2 WALKING_UPSTAIRS
 # 3 WALKING_DOWNSTAIRS
@@ -79,7 +79,7 @@ data_mean_std$y=activity
 #----------------------------------------------------------------
 # 4- Appropriately labels the data set with descriptive variable names.
 #--------------------------------------------------------------
-# We use the column_names and  is.valid.mean_sd created in point 2 above.
+# We used the column_names and  is.valid.mean_sd created in point 2 above.
 
 names(data_mean_std)=c(column_names[is.valid.mean_sd],"activity","subject")
 
